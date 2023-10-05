@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+
+    <title>Desafio Form</title>
+
+</head>
+
+<body>
+    <main>
+        <div class="titulo">
+            <h1 class="titulo-principal">Ficou com alguma dúvida? Nos mande uma mensagem!</h1>
+
+            <p class="titulo-secundario">caso tenha ficado com qualquer dúvida, basta nos mandar uma mensagem e entratemos em contato em menos de 24h.</p>   
+        </div>
+        
+        <div class="formulario">
+        <form class="form">
+            <input type="text" name="nome" class="input" placeholder="Nome completo*" required >
+            <span class="span">campo obrigatório</span>
+
+            <input type="email" name="email" class="input" placeholder="Email*" required >
+            <span class="span">campo obrigatório</span>
+
+            <input type="tel" name="tel" class="input" placeholder="Telefone*" required >
+            <span class="span">campo obrigatório</span>
+
+            <input type="text" name="mensagem" class="input mensagem" placeholder="Mensagem*" required >
+            <span class="span">campo obrigatório</span>
+
+            <p class="p">*campos obrigatórios</p>
+            <input class="submit" type="submit" value="Enviar" onclick="validaInformacoes()">
+        </form>  
+        </div>        
+    </main>  
+    
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
