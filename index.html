@@ -20,21 +20,30 @@
         </div>
         
         <div class="formulario">
-        <form class="form">
-            <input type="text" name="nome" class="input" placeholder="Nome completo*" required >
-            <span class="span">campo obrigatório</span>
+        <form class="form" id="form" onsubmit="return false">
 
-            <input type="email" name="email" class="input" placeholder="Email*" required >
-            <span class="span">campo obrigatório</span>
+            <div class="campos">
+               <input type="text" name="nome" class="input" placeholder="Nome completo*" >
+                <span class="span msg-error-nome">campo obrigatório</span> 
+            </div>
+            
+            <div class="campos">
+               <input type="email" name="email" class="input" placeholder="Email*" >
+                <span class="span msg-error-email">campo obrigatório</span> 
+            </div>
 
-            <input type="tel" name="tel" class="input" placeholder="Telefone*" required >
-            <span class="span">campo obrigatório</span>
+            <div class="campos">
+               <input type="tel" name="tel" class="input" placeholder="Telefone*" >
+                <span class="span msg-error-tel">campo obrigatório</span> 
+            </div>
 
-            <input type="text" name="mensagem" class="input mensagem" placeholder="Mensagem*" required >
-            <span class="span">campo obrigatório</span>
+            <div class="campos">
+                <input type="text" name="mensagem" class="input mensagem" placeholder="Mensagem*" >
+                <span class="span msg-error-mensagem">campo obrigatório</span>
+            </div>
 
             <p class="p">*campos obrigatórios</p>
-            <input class="submit" type="submit" value="Enviar" onclick="validaInformacoes()">
+            <input class="submit" type="submit" value="Enviar">
         </form>  
         </div>        
     </main>  
